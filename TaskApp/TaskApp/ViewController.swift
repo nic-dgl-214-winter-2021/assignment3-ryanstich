@@ -60,5 +60,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
     }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+    }
+    
+    @IBAction func didTapSort() {
+        if myTable.isEditing {
+            myTable.isEditing = false
+        }
+        else {
+            myTable.isEditing = true
+        }
+    }
+    
+    
     }
 
