@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  TaskApp
 //
-//  Created by Boss Hog on 2021-02-02.
+//  Created by Ryan Stich on 2021-02-02.
 //
 
 import UIKit
