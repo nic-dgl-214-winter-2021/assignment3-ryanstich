@@ -20,18 +20,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         myTable.dataSource = self
 
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view. //
     }
     
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
-    }
+    } //
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        if indexPath.row > -1 {
+        if indexPath.row > -1 { //
             let fieldcell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as! TableViewCell
             
             fieldcell.accessoryType = .none
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return fieldcell
         }
         
-        
+        //
         
         let cell = myTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
@@ -53,7 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.deselectRow(at: indexPath, animated: false)
         
-        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCell.AccessoryType.checkmark {
+        if tableView.cellForRow(at: indexPath)?.accessoryType ==  UITableViewCell.AccessoryType.checkmark { //
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.none
         } else {
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
